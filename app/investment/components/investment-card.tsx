@@ -30,7 +30,7 @@ export default function InvestmentCard({
   return (
     <div className="rounded-[24px] border border-white/6 bg-white/[0.02] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] backdrop-blur-sm">
       <div className="grid gap-5 lg:grid-cols-[350px_minmax(0,1fr)]">
-        <div className="relative overflow-hidden rounded-2xl">
+        <div className="relative overflow-hidden">
           <div className="absolute left-3 top-3 z-10 rounded-full bg-gradient-to-r from-violet-700 to-purple-600 px-4 py-2 text-xs font-semibold text-white shadow-lg">
             Open for Investment
           </div>
@@ -39,7 +39,7 @@ export default function InvestmentCard({
             {type}
           </div>
 
-          <div className="relative aspect-[16/9] w-full">
+          <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden">
             <Image
               src={image}
               alt={name}

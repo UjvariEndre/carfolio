@@ -55,12 +55,12 @@ export default function LoginPageContent() {
             </Link>
           </div>
 
-          <button
-            type="submit"
+          <Link
+            href="/investment   "
             className="inline-flex h-12 w-full items-center justify-center rounded-xl bg-gradient-to-r from-violet-700 to-purple-700 text-sm font-semibold text-white shadow-[0_0_30px_rgba(109,40,217,0.35)] transition hover:scale-[1.01] hover:brightness-110"
           >
             Sign In
-          </button>
+          </Link>
         </form>
 
         <div className="mt-8 text-center text-sm text-white/40">
