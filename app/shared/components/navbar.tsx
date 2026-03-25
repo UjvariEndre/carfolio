@@ -25,14 +25,14 @@ export function TopNavbar() {
 
         <nav className="flex items-center gap-6">
           <Link
-            href="/signin"
+            href="/auth/login"
             className="text-sm font-medium text-white/70 transition hover:text-white"
           >
             Sign in
           </Link>
 
           <Link
-            href="/signup"
+            href="/auth/signup"
             className="inline-flex h-10 items-center justify-center rounded-full bg-white px-5 text-sm font-semibold text-black transition hover:bg-white/90"
           >
             Get Started
