@@ -47,8 +47,8 @@ export default function SignupPageContent() {
                 type="button"
                 className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm font-medium text-white/85"
               >
-                AE
-                <span className="text-white/55">+971</span>
+                HU
+                <span className="text-white/55">+36</span>
                 <LucideChevronDown className="h-4 w-4 text-white/45" />
               </button>
 

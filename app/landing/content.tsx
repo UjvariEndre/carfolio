@@ -1,4 +1,4 @@
-import { TopNavbar } from "../shared/components/navbar";
+import { TopNavbar } from "./components/navbar";
 import StatCard from "./components/stat-card";
 
 export default function LandingPageContent() {
