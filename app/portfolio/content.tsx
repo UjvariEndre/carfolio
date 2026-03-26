@@ -1,11 +1,11 @@
 import { Car, PieChart, TrendingUp, Wallet } from "lucide-react";
+import { ActivityRow } from "../shared/components/activity-row";
 import NavBar from "../shared/components/navbar";
 import NavTabs from "../shared/components/navtabs";
+import { StatCard } from "../shared/components/stat-card";
 import { activities, holdings } from "../shared/data/portfolio-data";
-import { ActivityRow } from "./components/activity-row";
 import { AllocationRow } from "./components/allocation-row";
 import { HoldingRow } from "./components/holding-row";
-import { StatCard } from "./components/stat-card";
 
 export default function PortfolioPageContent() {
   return (

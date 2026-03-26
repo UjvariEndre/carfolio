@@ -1,4 +1,4 @@
-import { MiniMetric } from "./mini-metric";
+import { MiniMetric } from "../../shared/components/mini-metric";
 
 export function HoldingRow({
   name,
