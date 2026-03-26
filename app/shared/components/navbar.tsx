@@ -1,23 +1,10 @@
 import { ChevronDown } from "lucide-react";
-import Link from "next/link";
+import AppBrand from "./app-brand";
 
 export default function NavBar() {
   return (
     <div className="mx-auto flex h-16 max-w-[1180px] items-center justify-between px-6">
-      <Link href="/" className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-md border border-white/10 bg-white/[0.03] text-sm font-extrabold">
-          CF
-        </div>
-
-        <div className="leading-none">
-          <div className="text-sm font-semibold uppercase tracking-[0.16em]">
-            Carfolio
-          </div>
-          <div className="text-[10px] uppercase tracking-[0.24em] text-white/40">
-            Motors
-          </div>
-        </div>
-      </Link>
+      <AppBrand subtitle="Motors" />
 
       <div className="flex items-center gap-3">
         <div className="flex h-10 w-10 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-400/10 text-xs font-bold text-cyan-300">

@@ -1,27 +1,16 @@
 import Link from "next/link";
+import AppBrand from "@/app/shared/components/app-brand";
 
 export function TopNavbar() {
   return (
     <header className="w-full border-b border-white/5 bg-[#05060b]">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-10">
-        <Link href="/" className="flex items-center gap-3">
-          {/* Placeholder logo mark */}
-          <div className="flex h-9 w-9 items-center justify-center rounded-md border border-white/10 bg-white/5">
-            <span className="text-sm font-extrabold tracking-tight text-white">
-              CF
-            </span>
-          </div>
-
-          {/* Brand */}
-          <div className="leading-none">
-            <div className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
-              Carfolio
-            </div>
-            <div className="text-[10px] uppercase tracking-[0.28em] text-white/35">
-              Luxury Portfolio
-            </div>
-          </div>
-        </Link>
+        <AppBrand
+          subtitle="Luxury Portfolio"
+          markClassName="h-9 w-9 rounded-md border border-white/10 bg-white/5 text-sm tracking-tight"
+          titleClassName="text-sm tracking-[0.22em]"
+          subtitleClassName="tracking-[0.28em] text-white/35"
+        />
 
         <nav className="flex items-center gap-6">
           <Link

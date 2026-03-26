@@ -1,15 +1,31 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const tabs = [
+  { href: "/investment", label: "Investment" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/roi", label: "ROI" },
+  { href: "/my-investments", label: "My Investments" },
+  { href: "/settings", label: "Settings" },
+];
 
 export default function NavTabs() {
+  const pathname = usePathname();
+
   return (
     <div className="mx-auto max-w-[1180px] px-6">
       <nav className="flex gap-8 overflow-x-auto">
-        <NavTab href="/investment" active>
-          Investment
-        </NavTab>
-        <NavTab href="/portfolio">Portfolio</NavTab>
-        <NavTab href="/roi">ROI</NavTab>
-        <NavTab href="/my-investments">My Investments</NavTab>
+        {tabs.map((tab) => (
+          <NavTab
+            key={tab.href}
+            href={tab.href}
+            active={pathname === tab.href}
+          >
+            {tab.label}
+          </NavTab>
+        ))}
       </nav>
     </div>
   );
